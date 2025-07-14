@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  data-collection:
+    build: ./services/01-data-collection
+  indicator-engine:
+    build: ./services/02-indicator-engine
+  signal-generation:
+    build: ./services/03-signal-generation
+  execution-engine:
+    build: ./services/04-execution-engine
+  order-manager:
+    build: ./services/05-order-manager
+  risk-manager:
+    build: ./services/06-risk-manager
+  trade-logger:
+    build: ./services/07-trade-logger
+  performance-tracker:
+    build: ./services/08-performance-tracker
+  report-service:
+    build: ./services/09-report-service
+  alert-service:
+    build: ./services/10-alert-service
+  dashboard-frontend:
+    build: ./services/11-dashboard-frontend
+  dashboard-backend:
+    build: ./services/12-dashboard-backend
